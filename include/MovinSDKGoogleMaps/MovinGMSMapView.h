@@ -9,6 +9,8 @@
 @class MovinMap;
 @class MovinGMSTileLayer;
 @class MovinFloorSwitcher;
+@class MovinMapLayer;
+@class MovinMapStyle;
 @class MovinGMSPOIManager;
 
 
