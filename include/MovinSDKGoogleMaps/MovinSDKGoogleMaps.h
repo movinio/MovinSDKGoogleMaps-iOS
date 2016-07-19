@@ -7,6 +7,7 @@
 //
 
 #import <GoogleMaps/GoogleMaps.h>
+#import <MovinSDK/MovinSDK.h>
 #import <MovinSDKGoogleMaps/MovinGMSTileLayer.h>
 #import <MovinSDKGoogleMaps/MovinGMSPOIManager.h>
 #import <MovinSDKGoogleMaps/MovinGMSMapView.h>

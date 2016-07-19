@@ -25,8 +25,12 @@ This repository contains the static iOS library of the Google Maps integration f
   s.preserve_paths = "libMovinSDKGoogleMaps.a"
   s.ios.vendored_library = "libMovinSDKGoogleMaps.a"
 
-  s.libraries = "c++", "z", "network", "MovinSDK"
-  s.frameworks = "ImageIO", "CoreMotion", "SystemConfiguration", "CoreLocation", "UIKit", "GoogleMaps"
+
+  s.dependency "GoogleMaps"
+  s.dependency "MovinSDK"
+
+  s.libraries = "c++", "z", "network"
+  s.frameworks = "ImageIO", "CoreMotion", "SystemConfiguration", "CoreLocation", "UIKit"
 
   s.requires_arc = true
 end
