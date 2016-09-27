@@ -7,7 +7,7 @@ This repository contains the static iOS library of the Google Maps integration f
                    DESC
 
   s.homepage     = "http://www.movin.io"
-  s.license      = { :type => 'CC BY-ND 3.0' :file => 'LICENSE' }
+  s.license      = { :type => 'CC BY-ND 3.0', :file => 'LICENSE' }
   s.author       = { "Movin " => "info@movin.io" }
 
   s.platform     = :ios, "7.0"
