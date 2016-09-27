@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05E9210C1D22662B00D7A4D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E9210B1D22662B00D7A4D1 /* main.m */; };
+		05E9210F1D22662B00D7A4D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E9210E1D22662B00D7A4D1 /* AppDelegate.m */; };
+		05E921121D22662B00D7A4D1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E921111D22662B00D7A4D1 /* BaseViewController.m */; };
+		05E921151D22662B00D7A4D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E921131D22662B00D7A4D1 /* Main.storyboard */; };
+		05E921171D22662B00D7A4D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05E921161D22662B00D7A4D1 /* Assets.xcassets */; };
+		05E9211A1D22662B00D7A4D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E921181D22662B00D7A4D1 /* LaunchScreen.storyboard */; };
+		05E921251D22662B00D7A4D1 /* movin_example_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E921241D22662B00D7A4D1 /* movin_example_appTests.m */; };
+		05E921311D2269AB00D7A4D1 /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E921301D2269AB00D7A4D1 /* InitViewController.m */; };
+		05E921341D2269B900D7A4D1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E921331D2269B900D7A4D1 /* MapViewController.m */; };
+		B049D8E1A052B5194E2B3D25 /* libPods-movin-example-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7C27AE739B26288E8D4AC2 /* libPods-movin-example-app.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05E921211D22662B00D7A4D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E920FF1D22662B00D7A4D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05E921061D22662B00D7A4D1;
+			remoteInfo = "movin-example-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E921071D22662B00D7A4D1 /* movin-example-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "movin-example-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05E9210B1D22662B00D7A4D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05E9210D1D22662B00D7A4D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		05E9210E1D22662B00D7A4D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		05E921101D22662B00D7A4D1 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		05E921111D22662B00D7A4D1 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		05E921141D22662B00D7A4D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05E921161D22662B00D7A4D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05E921191D22662B00D7A4D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05E9211B1D22662B00D7A4D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05E921201D22662B00D7A4D1 /* movin-example-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "movin-example-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05E921241D22662B00D7A4D1 /* movin_example_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = movin_example_appTests.m; sourceTree = "<group>"; };
+		05E921261D22662B00D7A4D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05E9212F1D2269AB00D7A4D1 /* InitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitViewController.h; sourceTree = "<group>"; };
+		05E921301D2269AB00D7A4D1 /* InitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitViewController.m; sourceTree = "<group>"; };
+		05E921321D2269B900D7A4D1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		05E921331D2269B900D7A4D1 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		5F4A3C04DEF71049EB5F0425 /* Pods-movin-example-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movin-example-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-movin-example-app/Pods-movin-example-app.debug.xcconfig"; sourceTree = "<group>"; };
+		CAA3001483E237F11BDE09FB /* Pods-movin-example-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movin-example-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-movin-example-app/Pods-movin-example-app.release.xcconfig"; sourceTree = "<group>"; };
+		FB7C27AE739B26288E8D4AC2 /* libPods-movin-example-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-movin-example-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05E921041D22662B00D7A4D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B049D8E1A052B5194E2B3D25 /* libPods-movin-example-app.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05E9211D1D22662B00D7A4D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05E920FE1D22662B00D7A4D1 = {
+			isa = PBXGroup;
+			children = (
+				05E921091D22662B00D7A4D1 /* movin-example-app */,
+				05E921231D22662B00D7A4D1 /* movin-example-appTests */,
+				05E921081D22662B00D7A4D1 /* Products */,
+				CA63B4F03D0EEF71049C4899 /* Pods */,
+				0F8F07A5110421C458A62AAB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		05E921081D22662B00D7A4D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05E921071D22662B00D7A4D1 /* movin-example-app.app */,
+				05E921201D22662B00D7A4D1 /* movin-example-appTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05E921091D22662B00D7A4D1 /* movin-example-app */ = {
+			isa = PBXGroup;
+			children = (
+				05E9210D1D22662B00D7A4D1 /* AppDelegate.h */,
+				05E9210E1D22662B00D7A4D1 /* AppDelegate.m */,
+				05E921101D22662B00D7A4D1 /* BaseViewController.h */,
+				05E921111D22662B00D7A4D1 /* BaseViewController.m */,
+				05E921131D22662B00D7A4D1 /* Main.storyboard */,
+				05E921161D22662B00D7A4D1 /* Assets.xcassets */,
+				05E921181D22662B00D7A4D1 /* LaunchScreen.storyboard */,
+				05E9211B1D22662B00D7A4D1 /* Info.plist */,
+				05E9210A1D22662B00D7A4D1 /* Supporting Files */,
+				05E9212F1D2269AB00D7A4D1 /* InitViewController.h */,
+				05E921301D2269AB00D7A4D1 /* InitViewController.m */,
+				05E921321D2269B900D7A4D1 /* MapViewController.h */,
+				05E921331D2269B900D7A4D1 /* MapViewController.m */,
+			);
+			path = "movin-example-app";
+			sourceTree = "<group>";
+		};
+		05E9210A1D22662B00D7A4D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05E9210B1D22662B00D7A4D1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05E921231D22662B00D7A4D1 /* movin-example-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				05E921241D22662B00D7A4D1 /* movin_example_appTests.m */,
+				05E921261D22662B00D7A4D1 /* Info.plist */,
+			);
+			path = "movin-example-appTests";
+			sourceTree = "<group>";
+		};
+		0F8F07A5110421C458A62AAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB7C27AE739B26288E8D4AC2 /* libPods-movin-example-app.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA63B4F03D0EEF71049C4899 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F4A3C04DEF71049EB5F0425 /* Pods-movin-example-app.debug.xcconfig */,
+				CAA3001483E237F11BDE09FB /* Pods-movin-example-app.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05E921061D22662B00D7A4D1 /* movin-example-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05E921291D22662B00D7A4D1 /* Build configuration list for PBXNativeTarget "movin-example-app" */;
+			buildPhases = (
+				C5B91787D92C116E8667CAB3 /* [CP] Check Pods Manifest.lock */,
+				05E921031D22662B00D7A4D1 /* Sources */,
+				05E921041D22662B00D7A4D1 /* Frameworks */,
+				05E921051D22662B00D7A4D1 /* Resources */,
+				323EC1CA4AF2F1C5B52680F7 /* [CP] Embed Pods Frameworks */,
+				0A247E147B39109A8DBB3389 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "movin-example-app";
+			productName = "movin-example-app";
+			productReference = 05E921071D22662B00D7A4D1 /* movin-example-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05E9211F1D22662B00D7A4D1 /* movin-example-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05E9212C1D22662B00D7A4D1 /* Build configuration list for PBXNativeTarget "movin-example-appTests" */;
+			buildPhases = (
+				05E9211C1D22662B00D7A4D1 /* Sources */,
+				05E9211D1D22662B00D7A4D1 /* Frameworks */,
+				05E9211E1D22662B00D7A4D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05E921221D22662B00D7A4D1 /* PBXTargetDependency */,
+			);
+			name = "movin-example-appTests";
+			productName = "movin-example-appTests";
+			productReference = 05E921201D22662B00D7A4D1 /* movin-example-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05E920FF1D22662B00D7A4D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Movin;
+				TargetAttributes = {
+					05E921061D22662B00D7A4D1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VKG9LCV56E;
+					};
+					05E9211F1D22662B00D7A4D1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 05E921061D22662B00D7A4D1;
+					};
+				};
+			};
+			buildConfigurationList = 05E921021D22662B00D7A4D1 /* Build configuration list for PBXProject "movin-example-app" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05E920FE1D22662B00D7A4D1;
+			productRefGroup = 05E921081D22662B00D7A4D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05E921061D22662B00D7A4D1 /* movin-example-app */,
+				05E9211F1D22662B00D7A4D1 /* movin-example-appTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05E921051D22662B00D7A4D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E9211A1D22662B00D7A4D1 /* LaunchScreen.storyboard in Resources */,
+				05E921171D22662B00D7A4D1 /* Assets.xcassets in Resources */,
+				05E921151D22662B00D7A4D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05E9211E1D22662B00D7A4D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A247E147B39109A8DBB3389 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-movin-example-app/Pods-movin-example-app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		323EC1CA4AF2F1C5B52680F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-movin-example-app/Pods-movin-example-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5B91787D92C116E8667CAB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05E921031D22662B00D7A4D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E921121D22662B00D7A4D1 /* BaseViewController.m in Sources */,
+				05E9210F1D22662B00D7A4D1 /* AppDelegate.m in Sources */,
+				05E921341D2269B900D7A4D1 /* MapViewController.m in Sources */,
+				05E921311D2269AB00D7A4D1 /* InitViewController.m in Sources */,
+				05E9210C1D22662B00D7A4D1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05E9211C1D22662B00D7A4D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E921251D22662B00D7A4D1 /* movin_example_appTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05E921221D22662B00D7A4D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05E921061D22662B00D7A4D1 /* movin-example-app */;
+			targetProxy = 05E921211D22662B00D7A4D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05E921131D22662B00D7A4D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05E921141D22662B00D7A4D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		05E921181D22662B00D7A4D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05E921191D22662B00D7A4D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05E921271D22662B00D7A4D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05E921281D22662B00D7A4D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05E9212A1D22662B00D7A4D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F4A3C04DEF71049EB5F0425 /* Pods-movin-example-app.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VKG9LCV56E;
+				INFOPLIST_FILE = "movin-example-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.movin.movin-example-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		05E9212B1D22662B00D7A4D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAA3001483E237F11BDE09FB /* Pods-movin-example-app.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VKG9LCV56E;
+				INFOPLIST_FILE = "movin-example-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.movin.movin-example-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		05E9212D1D22662B00D7A4D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "movin-example-appTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.movin.movin-example-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/movin-example-app.app/movin-example-app";
+			};
+			name = Debug;
+		};
+		05E9212E1D22662B00D7A4D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "movin-example-appTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.movin.movin-example-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/movin-example-app.app/movin-example-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05E921021D22662B00D7A4D1 /* Build configuration list for PBXProject "movin-example-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05E921271D22662B00D7A4D1 /* Debug */,
+				05E921281D22662B00D7A4D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05E921291D22662B00D7A4D1 /* Build configuration list for PBXNativeTarget "movin-example-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05E9212A1D22662B00D7A4D1 /* Debug */,
+				05E9212B1D22662B00D7A4D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05E9212C1D22662B00D7A4D1 /* Build configuration list for PBXNativeTarget "movin-example-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05E9212D1D22662B00D7A4D1 /* Debug */,
+				05E9212E1D22662B00D7A4D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05E920FF1D22662B00D7A4D1 /* Project object */;
+}

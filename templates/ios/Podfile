@@ -1,0 +1,13 @@
+workspace 'movin-example-app.xcworkspace'
+
+target 'movin-example-app' do
+    project 'movin-example-app.xcodeproj'
+    platform :ios, '8.1'
+    pod 'MovinSDKGoogleMaps'
+end
+
+target 'movin-example-app-swift' do
+    project 'movin-example-app-swift.xcodeproj'
+    platform :ios, '8.1'
+    pod 'MovinSDKGoogleMaps'
+end

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Init View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InitViewController" customModule="movin_example_app_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="Jc8-3i-Rzd" kind="show" identifier="InitializedSeague" id="fux-Mm-McA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="TTY-JC-jAO">
+            <objects>
+                <viewController id="Jc8-3i-Rzd" customClass="MapViewController" customModule="movin_example_app_swift" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sZq-bi-ANR"/>
+                        <viewControllerLayoutGuide type="bottom" id="ADc-jP-epr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CTm-KM-hNU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLM-mO-aNV" customClass="MovinGMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xLM-mO-aNV" firstAttribute="top" secondItem="CTm-KM-hNU" secondAttribute="top" id="YLx-Kj-ROd"/>
+                            <constraint firstItem="xLM-mO-aNV" firstAttribute="leading" secondItem="CTm-KM-hNU" secondAttribute="leading" id="jt3-kR-8Us"/>
+                            <constraint firstAttribute="trailing" secondItem="xLM-mO-aNV" secondAttribute="trailing" id="sC2-ZL-d0p"/>
+                            <constraint firstItem="xLM-mO-aNV" firstAttribute="bottom" secondItem="ADc-jP-epr" secondAttribute="top" id="vzl-gv-TXU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="xLM-mO-aNV" id="ezg-yW-Gy8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uxz-dN-pwx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1277" y="344"/>
+        </scene>
+    </scenes>
+</document>
