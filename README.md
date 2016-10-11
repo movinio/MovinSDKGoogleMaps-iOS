@@ -1,7 +1,24 @@
 # MovinSDKGoogleMaps-iOS
 This repository contains the static iOS library of the Google Maps integration for the MovinSDK.
 
-##LICENSE
+Demo
+----
+To try out the MovinSDK with Google Maps integration, follow these steps:
+- Install CoacoaPods: [CocoaPods Guids - Getting Started](https://guides.cocoapods.org/using/getting-started.html).
+- Run the command `pod try MovinSDKGoogleMaps` in your Terminal. This will open XCode with our example project.
+  - If you prefer to use Swift:
+    - Expand the `movin-example-app-swift` project in your XCode Navigator.
+    - In `AppDelegate.swift`, insert your own Google Maps API key in the call to `GMSServices.provideAPIKey` and remove the `_ERROR` line above it. [Get API Key - Google Maps iOS SDK Documentation](https://developers.google.com/maps/documentation/ios-sdk/get-api-key)
+    - In `InitViewController.swift`, insert your Movin customer name, API key and map name into the `movinCustomer`, `movinAPIKey` and `movinMapName` variables and remove the `_ERROR` line above it. You can find these values in your Movin portal.
+  - If you prefer to use Objective-C:
+    - Expand the `movin-example-app` project in your XCode Navigator.
+    - In `AppDelegate.m`, insert your own Google Maps API key in the call to `[GMSServices provideAPIKey:]` and remove the `#error` line above it. [Get API Key - Google Maps iOS SDK Documentation](https://developers.google.com/maps/documentation/ios-sdk/get-api-key)
+    - In `InitViewController.m`, insert your Movin customer name, API key and map name into the `movinCustomer`, `movinAPIKey` and `movinMapName` variables and remove the `#error` line above it. You can find these values in your Movin portal.
+ 
+If you have any questions, feel free to contact us at info@movin.io.
+
+License
+-------
 Licensed under Creative Commons Attribution-NoDerivs 3.0 Unported
 
 <p>
