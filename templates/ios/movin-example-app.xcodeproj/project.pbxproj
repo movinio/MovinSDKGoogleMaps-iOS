@@ -152,15 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05E921291D22662B00D7A4D1 /* Build configuration list for PBXNativeTarget "movin-example-app" */;
 			buildPhases = (
-				E9BEC3410E6D8484CF7DC403 /* 📦 Check Pods Manifest.lock */,
 				C5B91787D92C116E8667CAB3 /* [CP] Check Pods Manifest.lock */,
 				05E921031D22662B00D7A4D1 /* Sources */,
 				05E921041D22662B00D7A4D1 /* Frameworks */,
 				05E921051D22662B00D7A4D1 /* Resources */,
 				323EC1CA4AF2F1C5B52680F7 /* [CP] Embed Pods Frameworks */,
 				0A247E147B39109A8DBB3389 /* [CP] Copy Pods Resources */,
-				2A0C8D6E4A367B25A3606714 /* 📦 Embed Pods Frameworks */,
-				346CFFA3BFA414C3B0D395B4 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,6 +197,7 @@
 				TargetAttributes = {
 					05E921061D22662B00D7A4D1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VKG9LCV56E;
 					};
 					05E9211F1D22662B00D7A4D1 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -262,21 +260,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-movin-example-app/Pods-movin-example-app-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2A0C8D6E4A367B25A3606714 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-movin-example-app/Pods-movin-example-app-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		323EC1CA4AF2F1C5B52680F7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,21 +275,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-movin-example-app/Pods-movin-example-app-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		346CFFA3BFA414C3B0D395B4 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-movin-example-app/Pods-movin-example-app-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C5B91787D92C116E8667CAB3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,22 +287,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E9BEC3410E6D8484CF7DC403 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -484,9 +437,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = VKG9LCV56E;
 				INFOPLIST_FILE = "movin-example-app/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.movin.movin-example-app";
@@ -501,9 +453,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = VKG9LCV56E;
 				INFOPLIST_FILE = "movin-example-app/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.movin.movin-example-app";

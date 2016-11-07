@@ -12,25 +12,16 @@
 #import "MapViewController.h"
 #import <MovinSDKGoogleMaps/MovinSDKGoogleMaps.h>
 
-@interface MapViewController () <MovinPositioningListener, MovinFloorChangedListener, GMSMapViewDelegate, MovinBeaconScannerListener>
+@interface MapViewController () <MovinPositioningListener, MovinFloorChangedListener, GMSMapViewDelegate>
 @property(weak, nonatomic) IBOutlet MovinGMSMapView* map;
 @end
 
 @implementation MapViewController {
     // Holds the positioning engine instance which is used to determine the position of the user.
     MovinPositioningEngine* _positioningEngine;
-    
-    // Holds the beacon scanner
-    MovinBeaconScanner* _beaconScanner;
 
     // Holds the marker which is placed at the position of the user.
     GMSMarker* _marker;
-    
-    // Holds the marker which is placed at the position of the nearest beacon.
-    GMSMarker* _beaconMarker;
-    
-    // Holds the shape of the entity in which the current beacon is located.
-    GMSPolygon* _currentEntityFigure;
 
     // Holds the button for following or unfollowing the user position.
     UIButton* _button;
@@ -55,7 +46,7 @@
      * to this view controller and setting the style of the map.
      */
     AppDelegate* delegate = (AppDelegate*)UIApplication.sharedApplication.delegate;
-    self.map.map = delegate.map;
+    self.map.movinMap = delegate.map;
     self.map.delegate = self;
 
     /*
@@ -85,20 +76,6 @@
         [_positioningEngine addPositioningListener:self];
         [_positioningEngine initialize];
     }
-    
-    /*
-     * Create the MovinBeaconScanner
-     */
-    NSError* beaconScannerError = nil;
-    _beaconScanner = [MovinSDK getBeaconScanner:&beaconScannerError];
-    
-    if(beaconScannerError != nil) {
-        [self alertWithTitle:@"Failed to create the beacon scanner"
-                  andMessage:beaconScannerError.localizedDescription
-                 andCanClose:YES];
-    } else {
-        [_beaconScanner addMap:self.map.map];
-    }
 
     /*
      * Create the Google Maps marker which will be constantly moved to the position of the user.
@@ -108,13 +85,6 @@
     _marker.opacity = 0;
     _marker.groundAnchor = CGPointMake(0.5, 0.5);
     _marker.map = self.map;
-    
-    /*
-     * Create the Google Maps marker which will constantly be moved to the position of the nearest beacon.
-     */
-    _beaconMarker = [GMSMarker markerWithPosition:CLLocationCoordinate2DMake(0, 0)];
-    _beaconMarker.opacity = 0;
-    _beaconMarker.map = self.map;
 
     /*
      * Create the button which toggles whether the position of the user will be followed. The size of the button is
@@ -178,11 +148,6 @@
     if (_positioningEngine != nil && !_positioningEngine.isStarted) {
         [_positioningEngine start];
     }
-    
-    // Also start the beacon scanner
-    if (_beaconScanner != nil) {
-        [_beaconScanner startWithListener:self];
-    }
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -191,11 +156,6 @@
     // When the view disappears, stop the positioning engine.
     if (_positioningEngine != nil && _positioningEngine.isStarted) {
         [_positioningEngine stop];
-    }
-    
-    // Also stop the beacon scanner
-    if(_beaconScanner != nil) {
-        [_beaconScanner stopWithListener:self];
     }
 }
 
@@ -280,64 +240,6 @@
                   andMessage:error.localizedDescription
                  andCanClose:YES];
     }
-}
-
-#pragma mark - Beacon scanner
--(void) beaconScanner:(MovinBeaconScanner *)scanner didChangeNearestBeacon:(MovinRangedBeacon *)beacon {
-    /*
-     * The nearest beacon was updated. The beacon property contains the new nearest beacon, or
-     * if there are no more valid beacons nearby, it returns nil.
-     * Update the room in which we are and the position marker of the beacon
-     */
-    // First remove the existing figures if they exist
-    if(_currentEntityFigure != nil) {
-        _currentEntityFigure.map = nil;
-        _currentEntityFigure = nil;
-    }
-    _beaconMarker.opacity = 0;
-    
-    // Update the beacon marker
-    if(beacon != nil) {
-        _beaconMarker.position = beacon.beacon.position.position.CLLocation;
-        _beaconMarker.opacity = 1;
-    }
-    
-    // Find the entity in which we are
-    [self.map.map getEntitiesInShape:beacon.beacon.position.position andFloor:beacon.beacon.position.floor andCallback:^(NSArray<MovinEntity *> * _Nullable entities, NSError * _Nullable error) {
-        
-        MovinEntity* entity = nil;
-        
-        // Find the entity which is of type Room or Hall
-        for(MovinEntity* ent in entities) {
-            if([ent.subType.baseType isEqualToString:@"Room"] ||
-               [ent.subType.baseType isEqualToString:@"Hall"]) {
-                entity = ent;
-                break;
-            }
-        }
-        if(entity == nil) {
-            return;
-        }
-        
-        // Create a GMSPolygon with the figure of this MovinEntity
-        GMSMutablePath* path = [[GMSMutablePath alloc] init];
-        for(GeoLatLng* coord in entity.geometry.pointsForIntersect) {
-            [path addCoordinate:coord.CLLocation];
-        }
-        GMSPolygon* polygon = [GMSPolygon polygonWithPath:path];
-        polygon.fillColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:0.5];
-        polygon.zIndex = 2;
-        polygon.map = self.map;
-        _currentEntityFigure = polygon;
-    }];
-    
-}
-
--(BOOL) beaconScanner:(MovinBeaconScanner *)scanner isValidNearestBeacon:(MovinRangedBeacon *)beacon {
-    /*
-     * Only beacons with a known position are valid in the beacon scanner
-     */
-    return beacon.beacon.position != nil;
 }
 
 #pragma mark - Tile provider

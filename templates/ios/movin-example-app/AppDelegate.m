@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-     #error Insert your Google Maps API key in the method call below and delete this #error line.
+    #error Insert your Google Maps API key in the method call below and delete this #error line.
     [GMSServices provideAPIKey:@"<your-google-maps-api-key-here>"];
     return YES;
 }

@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-     #error Insert your Movin customer name and API key in the variables below and delete this #error line.
+    #error Insert your Movin customer name and API key in the variables below and delete this #error line.
     NSString* movinCustomer = @"<your-customer-name-here>";
     NSString* movinAPIKey = @"<your-api-key-here>";
     NSString* movinMapName = @"<your-map-name-here>";

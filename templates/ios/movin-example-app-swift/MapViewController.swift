@@ -36,7 +36,7 @@ class MapViewController: BaseViewController, GMSMapViewDelegate, MovinFloorChang
          * to this view controller and setting the style of the map.
          */
         let delegate = UIApplication.shared.delegate as! AppDelegate
-        map.map = delegate.map
+        map.movinMap = delegate.map
         map.delegate = self
 
         /*
@@ -119,8 +119,8 @@ class MapViewController: BaseViewController, GMSMapViewDelegate, MovinFloorChang
             }
 
             // Use the default layers and styles
-            self.map.mapStyle = manifest!.styles["Default"];
-            self.map.mapLayer = manifest!.layers["Default"];
+            self.map.movinMapStyle = manifest!.defaultStyle;
+            self.map.movinMapLayer = manifest!.defaultLayer;
 
             // Configure the tile provider to follow floor changes.
             self.map.tileProvider!.add(self)
