@@ -7,12 +7,12 @@
 #import "MovinGMSImageRenderer.h"
 
 /**
- * @class MovinGMSMarker
- * @brief Represents a marker image which can be drawn on a MovinGMSMapView.
+ * Represents a marker image which can be drawn on a MovinGMSMapView.
  */
 @interface MovinGMSMarker : MovinGMSImageRenderer
 /**
- * @brief Initializes a new MovinGMSMarker object with the specified map view, position, floor and bearing.
+ * Initializes a new MovinGMSMarker object with the specified map view, position, floor and bearing.
+ *
  * @param map The map view in which to render the marker.
  * @param position The position of the marker.
  * @param floor The floor on which the marker should be drawn.
@@ -25,11 +25,11 @@
       andBearing:(float)bearing;
 
 /**
- * @brief Gets or sets the scale if the image.
+ * Gets or sets the scale if the image.
  */
 @property double imageScale;
 /**
- * @brief Gets or sets the image displayed at the location of this marker.
+ * Gets or sets the image displayed at the location of this marker.
  */
 @property UIImage* image;
 @end

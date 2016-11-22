@@ -10,33 +10,33 @@
 @class MovinGMSMapView;
 
 /**
- * @class MovinGMSLabel
- * @brief Represents a label which can be drawn on a MovinGSMSMapView.
+ * Represents a label which can be drawn on a MovinGSMSMapView.
  */
 @interface MovinGMSLabel : MovinGMSImageRenderer
 /**
- * @brief Gets or sets the text which will be drawn on this label.
+ * Gets or sets the text which will be drawn on this label.
  */
 @property (nonnull) NSString* text;
 /**
- * @brief Gets or sets the font in which the text will be drawn. The default value is "Arial 30".
+ * Gets or sets the font in which the text will be drawn. The default value is "Arial 30".
  */
 @property (nonnull) UIFont* font;
 /**
- * @brief Gets or sets the text color in which the text will be drawn. The default value is black.
+ * Gets or sets the text color in which the text will be drawn. The default value is black.
  */
 @property (nonnull) UIColor* textColor;
 /**
- * @brief Gets or sets the halo color with which the text will be drawn. The default value is white.
+ * Gets or sets the halo color with which the text will be drawn. The default value is white.
  */
 @property (nonnull) UIColor* textHaloColor;
 /**
- * @brief Gets or sets the halo width. The default value is 1.0.
+ * Gets or sets the halo width. The default value is 1.0.
  */
 @property float textHaloWidth;
 
 /**
- * @brief Initializes a new MovinGMSLabel object with the specified map, position, floor and bounds.
+ * Initializes a new MovinGMSLabel object with the specified map, position, floor and bounds.
+ *
  * @param map The map to draw the label on.
  * @param position The position to draw the label to.
  * @param floor The floor to draw the label on.
@@ -49,7 +49,8 @@
                 andBounds:(nonnull GeoShape*)bounds;
 
 /**
- * @brief Initializes a new MovinGMSLabel object with the specified map, position, floor, bearing and bounds.
+ * Initializes a new MovinGMSLabel object with the specified map, position, floor, bearing and bounds.
+ *
  * @param map The map to draw the label on.
  * @param position The position to draw the label to.
  * @param floor The floor to draw the label on.

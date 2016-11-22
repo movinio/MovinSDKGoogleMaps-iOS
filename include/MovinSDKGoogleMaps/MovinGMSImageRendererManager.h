@@ -12,21 +12,20 @@
 @protocol MovinGMSImageRendererManagerDelegate;
 
 /**
- * @class MovinGMSImageRendererManager
- * @brief Manages the hiding, showing and drawing of MovinGMSImageRenderer instances.
+ * Manages the hiding, showing and drawing of MovinGMSImageRenderer instances.
  */
 @interface MovinGMSImageRendererManager : NSObject
 
 /**
- * @brief Gets or sets whether entities should automatically be loaded onto the map.
+ * Gets or sets whether entities should automatically be loaded onto the map.
  */
 @property BOOL loadEntities;
 /**
- * @brief Gets or sets the delegate of this image renderer manager.
+ * Gets or sets the delegate of this image renderer manager.
  */
 @property id<MovinGMSImageRendererManagerDelegate> delegate;
 /**
- * @brief Refreshes the visible entities.
+ * Refreshes the visible entities.
  */
 - (void) refreshEntities;
 @end

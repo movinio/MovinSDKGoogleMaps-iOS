@@ -9,15 +9,15 @@
 @class MovinGMSImageRendererManager;
 
 /**
- * @protocol MovinGMSImageRendererManagerDelegate
- * @brief Defines methods that a delegate of APIRequest must implement to be able to determine which entities should
+ * Defines methods that a delegate of APIRequest must implement to be able to determine which entities should
  * automatically be drawn on the map.
  */
 @protocol MovinGMSImageRendererManagerDelegate<NSObject>
 
 /**
- * @brief Returns a value indicating whether the image renderer manager should create a renderer for the specified
+ * Returns a value indicating whether the image renderer manager should create a renderer for the specified
  * entity.
+ *
  * @param manager The image renderer manager.
  * @param entity The entity for which to decide whether an image renderer should be created.
  * @return YES if an image renderer should be created; NO otherwise.
