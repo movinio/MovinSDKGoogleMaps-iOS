@@ -1,9 +1,8 @@
 //
-//  MovinGMSImageRenderer.h
-//  TestDrawingLabels
+// MovinGMSImageRenderer.h
+// MovinSDKGoogleMaps
 //
-//  Created by Tim Potze on 15/08/16.
-//  Copyright © 2016 Movin. All rights reserved.
+// Copyright © 2016 Movin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

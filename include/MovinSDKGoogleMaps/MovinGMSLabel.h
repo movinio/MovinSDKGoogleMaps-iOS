@@ -1,6 +1,8 @@
 //
-// Created by Tim Potze on 16/08/16.
-// Copyright (c) 2016 Movin. All rights reserved.
+// MovinGMSLabel.h
+// MovinSDKGoogleMaps
+//
+// Copyright © 2016 Movin. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
