@@ -52,7 +52,14 @@
  * Gets the image renderer manager.
  */
 @property(nonnull, readonly) MovinGMSImageRendererManager* imageRendererManager;
-
+/**
+ * Gets or sets the Z-index used by Movin tile layers.
+ */
+@property int movinTileLayerZIndex;
+/**
+ * Gets or sets the Z-index used by Movin renderers.
+ */
+@property int movinRendererZIndex;
 /**
  * Gets or sets a value indicating whether the camera of this map view should automatically rotate based on
  * the heading of the compass of the current device.
