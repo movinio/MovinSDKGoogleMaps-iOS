@@ -2,7 +2,7 @@
 // MovinGMSMapView.h
 // MovinSDKGoogleMaps
 //
-// Copyright © 2016 Movin. All rights reserved.
+// Copyright © 2017 Movin. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,8 +16,8 @@
 @class MovinMapLayer;
 @class MovinMapStyle;
 @class MovinGMSMapView;
-@protocol MovinGMSMapViewListener;
 @class MovinGMSImageRendererManager;
+@protocol MovinGMSMapViewListener;
 
 /**
  * Represents a map view which will automatically draw the Movin map, labels, markers and floor switcher. Each
@@ -57,9 +57,13 @@
  */
 @property int movinTileLayerZIndex;
 /**
- * Gets or sets the Z-index used by Movin renderers.
+ * Gets or sets the default Z-index used by Movin markers.
  */
-@property int movinRendererZIndex;
+@property int movinDefaultMarkerZIndex;
+/**
+ * Gets or sets the default Z-index used by Movin labels.
+ */
+@property int movinDefaultLabelZIndex;
 /**
  * Gets or sets a value indicating whether the camera of this map view should automatically rotate based on
  * the heading of the compass of the current device.
@@ -80,6 +84,10 @@
 @property(readonly, nonnull) NSDate* lastCameraChangeByGesture;
 
 /**
+ * Gets or sets the currently visible floor. If the tile provider has not yet been loaded (the map style/layer have not yet been set), this value cannot be set or get.
+ */
+@property double floor;
+/**
  * Moves to camera to the currently set map and zoom in to make it fit the screen of the device.
  */
 - (void)fitToMap;
@@ -88,4 +96,19 @@
  * Moves the camera to the currently set map and zooms to the specified zoom level.
  */
 - (void)zoomOnMap:(float)zoom;
+
+/**
+ * Adds a listener to this map view.
+ *
+ * @param listener The listener to add.
+ */
+- (void)addListener:(nonnull id <MovinGMSMapViewListener>)listener;
+
+/**
+ * Removes a listener from this map view.
+ *
+ * @param listener The listener to remove.
+ */
+- (void)removeListener:(nonnull id <MovinGMSMapViewListener>)listener;
+
 @end

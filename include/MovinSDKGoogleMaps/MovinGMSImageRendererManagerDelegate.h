@@ -2,7 +2,7 @@
 // MovinGMSImageRendererManagerDelegate.h
 // MovinSDKGoogleMaps
 //
-// Copyright © 2016 Movin. All rights reserved.
+// Copyright © 2017 Movin. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,6 +16,8 @@
  */
 @protocol MovinGMSImageRendererManagerDelegate<NSObject>
 
+@optional
+
 /**
  * Returns a value indicating whether the image renderer manager should create a renderer for the specified
  * entity.
@@ -26,4 +28,11 @@
  */
 - (BOOL)imageRendererManager:(MovinGMSImageRendererManager*)manager
           shouldRenderEntity:(MovinEntity*)entity;
+
+/**
+ * Occurs when image renderers have been loaded for the entities for the active style.
+ *
+ * @param manager  The image renderer manager.
+ */
+- (void)imageRendererManagerDidLoadImageRenderers:(MovinGMSImageRendererManager*)manager;
 @end

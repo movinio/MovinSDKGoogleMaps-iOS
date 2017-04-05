@@ -2,7 +2,7 @@
 // MovinSDKGoogleMaps.h
 // MovinSDKGoogleMaps
 //
-// Copyright © 2016 Movin. All rights reserved.
+// Copyright © 2017 Movin. All rights reserved.
 //
 
 #import <GoogleMaps/GoogleMaps.h>
@@ -10,6 +10,7 @@
 
 // Maps
 #import <MovinSDKGoogleMaps/MovinGMSMapView.h>
+#import <MovinSDKGoogleMaps/MovinGMSMapViewListener.h>
 
 // Rendering
 #import <MovinSDKGoogleMaps/MovinGMSImageRendererManager.h>

@@ -2,7 +2,7 @@
 // MovinGMSImageRenderer.h
 // MovinSDKGoogleMaps
 //
-// Copyright © 2016 Movin. All rights reserved.
+// Copyright © 2017 Movin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -19,7 +19,7 @@
 /**
  * Gets or sets the map this image renderer should draw on.
  */
-@property MovinGMSMapView* map;
+@property (weak) MovinGMSMapView* map;
 /**
  * Gets or sets the position where the image should be drawn to.
  */
@@ -40,6 +40,10 @@
  * Gets or sets the bounds in which the image should be drawn.
  */
 @property GeoShape* bounds;
+/**
+ * Gets the entity associated with this image renderer if it has been automatically loaded.
+ */
+@property (readonly) MovinEntity* entity;
 /**
  * Gets or sets the scaling style of the image.
  */
@@ -65,37 +69,48 @@
  * Gets or sets the maximum zoom level to which the image is visible.
  */
 @property float maxZoomLevel;
-
 /**
  * Gets or sets the opacity of the image.
  */
 @property float opacity;
-
 /**
  * Gets or sets the anchor point of the image.
  */
 @property CGPoint anchor;
-
 /**
  * Gets a value indicating whether this element is visible.
  */
 @property(readonly) BOOL visible;
-
 /**
  * Gets the size of the image.
  */
 @property(readonly) CGSize imageSize;
-
 /**
  * Gets the size the image should have on a GMSGroundOverlay.
  */
 @property(readonly) CGSize overlaySize;
-
 /**
  * Gets the bearing the image should have on a GMSGroundOverlay.
  */
 @property(readonly) double overlayBearing;
-
+/**
+ * Gets or sets whether the rendering of this image renderer should be suspended.
+ */
+@property BOOL renderingSuspended;
+/**
+ * Gets or sets a value indicating whether this image renderer should cause tap notifications.
+ */
+@property BOOL tappable;
+/**
+ * Gets or sets the Z index of this image renderer.
+ */
+@property int zIndex;
+/**
+ * Gets or sets user data. You can use this property to associate an arbitrary object with this marker. Note that
+ * userData should not hold any strong references to the image renderer object, otherwise a loop may be created
+ * (preventing ARC from releasing objects).
+ */
+@property id userData;
 /**
  * Invalidates the image of this instance and requests the image to be re-rendered. This method should only
  * every be called by subclasses of MovinGMSImageRenderer.

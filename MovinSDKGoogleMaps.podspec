@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MovinSDKGoogleMaps"
-  s.version      = "2.4.3"
+  s.version      = "2.5.0"
   s.summary      = "Static iOS library of the Google Maps integration for the MovinSDK."
   s.description  = <<-DESC
 This repository contains the static iOS library of the Google Maps integration for the MovinSDK.
