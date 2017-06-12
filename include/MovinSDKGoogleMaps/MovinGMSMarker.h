@@ -12,6 +12,7 @@
  * Represents a marker image which can be drawn on a MovinGMSMapView.
  */
 @interface MovinGMSMarker : MovinGMSImageRenderer
+
 /**
  * Initializes a new MovinGMSMarker object with the specified map view, position, floor and bearing.
  *
@@ -21,10 +22,10 @@
  * @param bearing The bearing with which the marker should  be drawn.
  * @return A MovinGMSMarker object with the specified map view, position, floor and bearing.
  */
--(id)initWithMap:(MovinGMSMapView*)map
-     andPosition:(GeoLatLng*)position
-        andFloor:(double)floor
-      andBearing:(float)bearing;
+- (id)initWithMap:(MovinGMSMapView*)map
+      andPosition:(GeoLatLng*)position
+         andFloor:(double)floor
+       andBearing:(float)bearing;
 
 /**
  * Gets or sets the scale if the image.

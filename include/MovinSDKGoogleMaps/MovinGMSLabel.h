@@ -15,22 +15,23 @@
  * Represents a label which can be drawn on a MovinGSMSMapView.
  */
 @interface MovinGMSLabel : MovinGMSImageRenderer
+
 /**
  * Gets or sets the text which will be drawn on this label.
  */
-@property (nonnull) NSString* text;
+@property(nonnull) NSString* text;
 /**
  * Gets or sets the font in which the text will be drawn. The default value is "Arial 30".
  */
-@property (nonnull) UIFont* font;
+@property(nonnull) UIFont* font;
 /**
  * Gets or sets the text color in which the text will be drawn. The default value is black.
  */
-@property (nonnull) UIColor* textColor;
+@property(nonnull) UIColor* textColor;
 /**
  * Gets or sets the halo color with which the text will be drawn. The default value is white.
  */
-@property (nonnull) UIColor* textHaloColor;
+@property(nonnull) UIColor* textHaloColor;
 /**
  * Gets or sets the halo width. The default value is 1.0.
  */

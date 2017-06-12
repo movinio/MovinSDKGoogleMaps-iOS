@@ -25,11 +25,11 @@
 /**
  * Gets or sets the delegate of this image renderer manager.
  */
-@property (weak) id<MovinGMSImageRendererManagerDelegate> delegate;
+@property(weak) id<MovinGMSImageRendererManagerDelegate> delegate;
 /**
  * Gets all renders registered to this image renderer manager.
  */
-@property (readonly) NSArray<MovinGMSImageRenderer*>* allRenderers;
+@property(readonly) NSArray<MovinGMSImageRenderer*>* allRenderers;
 
 /**
  * Refreshes the visible entities.

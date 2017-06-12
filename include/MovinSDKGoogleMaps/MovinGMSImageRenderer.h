@@ -19,7 +19,7 @@
 /**
  * Gets or sets the map this image renderer should draw on.
  */
-@property (weak) MovinGMSMapView* map;
+@property(weak) MovinGMSMapView* map;
 /**
  * Gets or sets the position where the image should be drawn to.
  */
@@ -43,7 +43,7 @@
 /**
  * Gets the entity associated with this image renderer if it has been automatically loaded.
  */
-@property (readonly) MovinEntity* entity;
+@property(readonly) MovinEntity* entity;
 /**
  * Gets or sets the scaling style of the image.
  */
@@ -86,14 +86,6 @@
  */
 @property(readonly) CGSize imageSize;
 /**
- * Gets the size the image should have on a GMSGroundOverlay.
- */
-@property(readonly) CGSize overlaySize;
-/**
- * Gets the bearing the image should have on a GMSGroundOverlay.
- */
-@property(readonly) double overlayBearing;
-/**
  * Gets or sets whether the rendering of this image renderer should be suspended.
  */
 @property BOOL renderingSuspended;
@@ -106,11 +98,12 @@
  */
 @property int zIndex;
 /**
- * Gets or sets user data. You can use this property to associate an arbitrary object with this marker. Note that
+ * Gets or sets user data. You can use this property to associate an arbitrary object with this renderer. Note that
  * userData should not hold any strong references to the image renderer object, otherwise a loop may be created
  * (preventing ARC from releasing objects).
  */
 @property id userData;
+
 /**
  * Invalidates the image of this instance and requests the image to be re-rendered. This method should only
  * every be called by subclasses of MovinGMSImageRenderer.

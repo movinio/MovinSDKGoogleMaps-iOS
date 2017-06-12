@@ -24,6 +24,7 @@
  * feature can individually be disabled.
  */
 @interface MovinGMSMapView : GMSMapView
+
 /**
  * Gets or sets the map layer which will be used to draw the map.
  */
@@ -77,7 +78,7 @@
 /**
  * Gets the MovinSmoothCompass instance used by this map view when compassRotation is set to YES.
  */
-@property (readonly, nonnull) MovinSmoothCompass* compass;
+@property(readonly, nonnull) MovinSmoothCompass* compass;
 /**
  * Gets the timestamp the camera has been moved by a user gesture last.
  */
@@ -87,6 +88,7 @@
  * Gets or sets the currently visible floor. If the tile provider has not yet been loaded (the map style/layer have not yet been set), this value cannot be set or get.
  */
 @property double floor;
+
 /**
  * Moves to camera to the currently set map and zoom in to make it fit the screen of the device.
  */
@@ -102,13 +104,13 @@
  *
  * @param listener The listener to add.
  */
-- (void)addListener:(nonnull id <MovinGMSMapViewListener>)listener;
+- (void)addListener:(nonnull id<MovinGMSMapViewListener>)listener;
 
 /**
  * Removes a listener from this map view.
  *
  * @param listener The listener to remove.
  */
-- (void)removeListener:(nonnull id <MovinGMSMapViewListener>)listener;
+- (void)removeListener:(nonnull id<MovinGMSMapViewListener>)listener;
 
 @end
