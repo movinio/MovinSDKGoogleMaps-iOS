@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MovinSDKGoogleMaps"
-  s.version      = "2.8.5"
+  s.version      = "2.8.6"
   s.summary      = "Static iOS library of the Google Maps integration for the MovinSDK."
   s.description  = <<-DESC
 This repository contains the static iOS library of the Google Maps integration for the MovinSDK.
@@ -20,7 +20,7 @@ This repository contains the static iOS library of the Google Maps integration f
 
 
   s.dependency "GoogleMaps"
-  s.dependency "MovinSDK", ">= 2.8.5"
+  s.dependency "MovinSDK", ">= 2.8.6"
 
   s.libraries = "c++", "z"
   s.frameworks = "ImageIO", "CoreMotion", "SystemConfiguration", "CoreLocation", "UIKit"
